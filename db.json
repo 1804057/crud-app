@@ -1,19 +1,24 @@
 {
-  "posts": [
+  "user": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "firstname":"Zerin Shaima",
+      "lastname":"Meem",
+      "email":"u1804057@student.cuet.ac.bd",
+      "studentId":1804057,
+      "codeforces":"Raven__57",
+      "codechef":"zerin_shaima",
+      "atcoder":"Meem"
     }
   ],
-  "comments": [
+  "admin": [
     {
       "id": 1,
       "body": "some comment",
       "postId": 1
     }
   ],
-  "profile": {
+  "contests": {
     "name": "typicode"
   }
 }
