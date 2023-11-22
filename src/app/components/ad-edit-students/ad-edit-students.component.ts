@@ -1,5 +1,7 @@
+import { DialogRef } from '@angular/cdk/dialog';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { UserServiceService } from 'src/app/service/user-service.service';
 
 @Component({
   selector: 'app-ad-edit-students',
@@ -8,7 +10,9 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class AdEditStudentsComponent {
   userForm: FormGroup;
-  constructor(private form_builder: FormBuilder){
+  constructor(private form_builder: FormBuilder,
+    private userService: UserServiceService,
+    private dialogRef: DialogRef<AdEditStudentsComponent>){
     this.userForm = this.form_builder.group({
       firstname:'',
       lastname:'',
@@ -22,7 +26,16 @@ export class AdEditStudentsComponent {
 
   onFormSubmit(){
     if(this.userForm.valid){
-      console.log(this.userForm.value);
+      this.userService.addUser(this.userForm.value).subscribe({
+        next:(val: any)=>{
+          alert('user Added');
+          this.dialogRef.close();
+        },
+        error:(val: any)=>{
+          alert('found issues');
+        }
+
+      });
     }
   }
 

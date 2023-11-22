@@ -2,13 +2,23 @@
   "user": [
     {
       "id": 1,
-      "firstname":"Zerin Shaima",
-      "lastname":"Meem",
-      "email":"u1804057@student.cuet.ac.bd",
-      "studentId":1804057,
-      "codeforces":"Raven__57",
-      "codechef":"zerin_shaima",
-      "atcoder":"Meem"
+      "firstname": "Zerin Shaima",
+      "lastname": "Meem",
+      "email": "u1804057@student.cuet.ac.bd",
+      "studentId": 1804057,
+      "codeforces": "Raven__57",
+      "codechef": "zerin_shaima",
+      "atcoder": "Meem"
+    },
+    {
+      "firstname": "scccc",
+      "lastname": "wwwwwwe",
+      "email": "sdcs@gmail.com",
+      "studentId": 11111111,
+      "codeforces": "ddddddddd",
+      "codechef": "cccccccccc",
+      "atcoder": "wwwwww",
+      "id": 2
     }
   ],
   "admin": [
